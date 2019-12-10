@@ -1,0 +1,125 @@
+body {
+    background-color: #CFCECE
+}
+.jumbotron {
+    background-image: url("../img/1788.jpg");
+    margin-bottom:0;
+}
+.img-products{
+    width:40%;
+}
+
+.img-sandwich{
+    width:10%;
+}
+
+.img-carrousel {
+    display: block;
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav{
+    margin-left:20px;
+}
+.table{
+    width: auto;
+    height: auto;
+}
+
+.tab-pane{
+    margin-left:20px;
+}
+.form-margin{
+    margin-left: 13%;
+    margin-right: 13%;
+}
+.text-job{
+    text-align: center;
+    margin-right: 10%;
+    margin-left: 10%;
+    font-size: 25px;
+}
+
+ul.nav-pills {
+    top: 20em;
+    position: fixed;
+}
+
+div.col-8 div {
+    height: 500px;
+}
+
+canvas {
+    background-image: url("../img/boxing.png");
+}
+
+.validation {
+    color: red;
+}
+
+.gallery {
+    filter: grayscale(100%);
+}
+
+.page-footer{
+    background-color: rgb(52, 58, 64);
+    color: white;
+    margin-top: 10px;
+}
+
+.img-footer{
+    width: 15%;
+    height: 15%;
+}
+
+.footer-links{
+    color: white;
+}
+
+.gallery:hover {
+    filter: grayscale(0%);
+}
+
+.container{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+.elemento{
+    width:21%;
+}
+
+td {
+    text-align: center;
+}
+
+th {
+    text-align: center;
+}
+
+th.sandwich{
+    text-align: left;
+}
+
+.col {
+    margin-top: 5%;
+}
+#back{
+    margin-top: 20%;
+    margin-left: 30%;
+}
+#player{
+    margin-top: 2%;
+    margin-left: 30%;
+}
+#speed{
+    margin-top: 20%;
+}
+
+.game-control{
+    margin-left: 40%;
+}

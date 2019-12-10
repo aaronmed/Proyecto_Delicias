@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Productos - Delicias España</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link href="img/12345.ico" type="image/ico" rel="shortcut icon">
+</head>
+
+<body data-spy="scroll" data-target="#my-scrollspy" data-offset="0">
+  <div class="jumbotron text-center text-white">
+    <h1>Delicias</h1>
+    <h4>20 años de experiencia nos hacen los mejores</h4>
+  </div>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Inicio</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="productos.html" id="navbardrop" data-toggle="dropdown">
+          Productos
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="productos.html#section1">Hamburguesas</a>
+          <a class="dropdown-item" href="productos.html#section2">Papas</a>
+          <a class="dropdown-item" href="productos.html#section3">Bocadillos</a>
+        </div>
+      <li class="nav-item">
+        <a class="nav-link" href="restaurantes.html">Restaurantes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="empleo.html">Empleo</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="juego.html">Juego</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="list-group">
+    <div class="row">
+
+      <nav class="col-sm-3 d-none d-sm-block" id="my-scrollspy">
+        <ul class="nav nav-pills flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="#section1">HAMBURGUESAS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section2">PAPAS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section3">BOCADILLOS</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="col-sm-9 col-12">
+        <div id="section1">
+          <div class="table-responsive">
+            <h2>HAMBURGUESAS</h2>
+            <table class="table table-bordered table-dark ">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">Nombre</th>
+                  <th scope="col">Ingredientes</th>
+                  <th scope="col">Precio</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th><img class="img-products" src="img/san-francisco.png" alt="san-francisco"></th>
+                  <td>San Francisco</td>
+                  <td>Carne de Ternera, Bacon, Salchicha Frankfurt, Cebolla, Queso y Salsa Barbacoa</td>
+                  <td>3,60€</td>
+                </tr>
+                <tr>
+                  <th><img class="img-products" src="img/new-generation.png" alt="new-generation"></th>
+                  <td>New Generation</td>
+                  <td>Carne de Ternera, Bacon, Cebolla Frita, Queso, Lechuga, Tomate, Salsa Remolade, Ketchup y Mostaza</td>
+                  <td>3,30€</td>
+                </tr>
+                <tr>
+                  <th><img class="img-products" src="img/arizona.png" alt="arizona"></th>
+                  <td>Arizona </td>
+                  <td>Carne de Ternera, Jamón, Queso, Salsa de Queso Cheddar y Salsa Especial</td>
+                  <td>3,60€</td>
+                </tr>
+                <tr>
+                  <th><img class="img-products" src="img/delicia-de-pollo.png" alt="delicia-de-pollo"></th>
+                  <td>Delicia de Pollo</td>
+                  <td>Pechuga de Pollo Empanada, Lechuga, Cebolla, Tomate y 3 salsas</td>
+                  <td>3,60€</td>
+                </tr>
+                <tr>
+                  <th><img class="img-products" src="img/palquepueda.png" alt="palquepueda"></th>
+                  <td>Pal' Q Pueda</td>
+                  <td>Carne de Ternera 150gr, Bacon, Cebolla, Huevo Frito, Jamón, Queso, Lechuga, Tomate, Ketchup, Mostaza, Ali Oli y la Salsa Especial</td>
+                  <td>4,65€</td>
+                </tr>
+                <tr>
+                  <th scope="row"><img class="img-products" src="img/tinki-winki.png" alt="tinki-winki"></th>
+                  <td>Tinki Winki</td>
+                  <td>Doble de Carne Ternera, Doble de Queso Cheddar, Cebolla Frita, Salsa Barbacoa y Salsa Especial</td>
+                  <td>4,60€</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div id="section2">
+          <h2>PAPAS</h2>
+          <div class="table-responsive">
+            <table class="table table-bordered table-dark ">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">Nombre</th>
+                  <th scope="col">Ingredientes</th>
+                  <th scope="col">Precio</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th><img class="img-products" src="img/papasdeto.png" alt="papasdeto"></th>
+                  <td>Papas de Tó</td>
+                  <td>Papas, Cebolla, Col, Jamón, Queso, Huevo Duro, Atún, Ketchup, Mostaza y Alioli</td>
+                  <td>5,25€</td>
+                </tr>
+                <tr>
+                  <th><img class="img-products" src="img/mahattan.png" alt="mahattan"></th>
+                  <td>Manhattan</td>
+                  <td>Papas, Cebolla Frita, Queso y Alioli</td>
+                  <td>3,60€</td>
+                </tr>
+                <tr>
+                  <th><img class="img-products" src="img/sweet-alabama.png" alt="sweet-alabama"></th>
+                  <td>Sweet Alabama</td>
+                  <td>Papas, Cebolla Frita, Queso, Pollo, Salsa Barbacoa y Salsa Especial</td>
+                  <td>4,75€</td>
+                </tr>
+                <tr>
+                  <th><img class="img-products" src="img/bandeja-papas.png" alt="papas-clasica"></th>
+                  <td>Bandeja de papas clásica</td>
+                  <td>Papas, Ketchup, Mostaza y Alioli</td>
+                  <td>2,60€</td>
+                </tr>
+                <tr>
+                  <th><img class="img-products" src="img/yorkeso.png" alt="yorkeso"></th>
+                  <td>Papas Yorkeso</td>
+                  <td>Papas, Jamón York, Queso, Ketchup, Mostaza y Alioli</td>
+                  <td>3,15€</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div id="section3">
+          <h2>BOCADILLOS</h2>
+          <div class="table-responsive">
+            <table class="table table-bordered table-dark ">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">Nombre</th>
+                  <th scope="col">Ingredientes</th>
+                  <th scope="col">Precio</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="sandwich"><img class="img-sandwich" src="img/dakota.jpg" alt="dakota"></th>
+                  <td>Bocata Dakota</td>
+                  <td>Bacon, Queso Cheddar, Papas y Alioli</td>
+                  <td>4,70€</td>
+                </tr>
+                <tr>
+                  <th class="sandwich"><img class="img-sandwich" src="img/lomo.png" alt="lomo"></th>
+                  <td>Bocadillo Clásico de Lomo</td>
+                  <td>Lomo, Queso y Alioli</td>
+                  <td>2,85€</td>
+                </tr>
+                <tr>
+                  <th class="sandwich"><img class="img-sandwich" src="img/clasico-pechuga.png" alt="pechuga"></th>
+                  <td>Bocadillo Clásico de Pechuga</td>
+                  <td>Pechuga, Queso y Alioli</td>
+                  <td>2,85€</td>
+                </tr>
+                <tr>
+                  <th class="sandwich"><img class="img-sandwich" src="img/estilo-propio.png" alt="estilo-propio"></th>
+                  <td>Bocadillo Estilo Propio</td>
+                  <td>Pollo Picado, Jamón, Queso, Huevo Frito, Papas y Alioli</td>
+                  <td>4,30€</td>
+                </tr>
+                <tr>
+                  <th class="sandwich"><img class="img-sandwich" src="img/americano.png" alt="americano"></th>
+                  <td>Bocadillo Americano</td>
+                  <td>Carne, Bacon, Queso y Salsa Barbacoa</td>
+                  <td>2,85€</td>
+                </tr>
+                <tr>
+                  <th class="sandwich"><img class="img-sandwich" src="img/animalito.png" alt="animalito"></th>
+                  <td>Bocadillo Animalito</td>
+                  <td>Pechuga, Lomo, Bacon, Lechuga, Tomate, Alioli, Jamón y Queso</td>
+                  <td>3,90€</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="page-footer font-small pt-4">
+    <div class="container-fluid text-center text-md-left">
+      <div class="row">
+        <div class="col-md-6 mt-md-0 mt-3">
+          <h5 class="text-uppercase">Delicias España</h5>
+          <p>20 años dando el mejor servicio de comida rápida de Canarias.</p>
+        </div>
+        <hr class="clearfix w-100 d-md-none pb-3">
+        <div class="col-md-3 mb-md-0 mb-3">
+          <h5 class="text-uppercase">Links</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a class="footer-links" href="#!">Aviso legal</a>
+            </li>
+            <li>
+              <a class="footer-links" href="#!">Política de privacidad</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-md-0 mb-3">
+          <h5 class="text-uppercase">REDES SOCIALES</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!"><img class="img-fluid img-footer" src="img/twitter2.png" alt="twitter"></a>
+              <a href="#!"><img class="img-fluid img-footer" src="img/instagram2.png" alt="instagram"></a>
+              <a href="#!"><img class="img-fluid img-footer" src="img/facebook2.png" alt="facebook"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+      <a class="footer-links" href="index.html">Delicias España</a>
+    </div>
+  </footer>
+</body>
+
+</html>

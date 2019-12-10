@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Juego - Delicias España</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="js/burguer.js"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="img/12345.ico" type="image/ico" rel="shortcut icon">
+</head>
+
+<body>
+    <div class="jumbotron text-center text-white">
+        <h1>Delicias</h1>
+        <h4>20 años de experiencia nos hacen los mejores</h4>
+    </div>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="productos.html" id="navbardrop" data-toggle="dropdown">
+                    Productos
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="productos.html#section1">Hamburguesas</a>
+                    <a class="dropdown-item" href="productos.html#section2">Papas</a>
+                    <a class="dropdown-item" href="productos.html#section3">Bocadillos</a>
+                </div>
+            <li class="nav-item">
+                <a class="nav-link" href="restaurantes.html">Restaurantes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="empleo.html">Empleo</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="juego.html">Juego</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="row">
+        <div class="col">
+            <button class="btn btn-dark" id="back" onclick="changeBack()">Cambiar fondo</button>
+            <br />
+            <button class="btn btn-dark" id="player" onclick="changePlayer()">Cambiar jugador</button>
+        </div>
+        <div class="col">
+            <canvas id="canvas" width="250" height="250"></canvas>
+        </div>
+        <div class="col">
+            <button class="btn btn-dark" id="speed" onclick="changeSpeed()">Aumentar velocidad</button>
+        </div>
+    </div>
+    <div class="game-control">
+        <button class="btn btn-secondary" id="start" onclick="start()">Start</button>
+        <button class="btn btn-danger" id="pause" onclick="pause()">Pause</button>
+    </div>
+</body>
+
+</html>

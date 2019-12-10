@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Empleo - Delicias España</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="img/12345.ico" type="image/ico" rel="shortcut icon">
+    <script src="js/validate.js"></script>
+</head>
+
+<body class="fondo-empleo">
+    <div class="jumbotron text-center text-white">
+        <h1>Delicias</h1>
+        <h4>20 años de experiencia nos hacen los mejores</h4>
+    </div>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="productos.html" id="navbardrop" data-toggle="dropdown">
+                    Productos
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="productos.html#section1">Hamburguesas</a>
+                    <a class="dropdown-item" href="productos.html#section2">Papas</a>
+                    <a class="dropdown-item" href="productos.html#section3 ">Bocadillos</a>
+                </div>
+            <li class="nav-item">
+                <a class="nav-link" href="restaurantes.html">Restaurantes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="empleo.html">Empleo</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="juego.html">Juego</a>
+            </li>
+        </ul>
+    </nav>
+    <p class="text-job">Si le interesa trabajar con nosotros puede rellenar el formulario para poder recopilar sus
+        datos aquí debajo o si
+        lo
+        prefiere subir su C.V.</p>
+    <form>
+        <div class="form-margin">
+            <label for="exampleFormControlFile1">Añada su C.V. en formato PDF</label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            <br>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+    </form>
+    <br /><br />
+    <form class="form-margin" name="myForm" onsubmit="return validateForm()">
+        <div class="form-row">
+            <div class="col">
+                <label for="inputNombre">Nombre</label>
+                <input name="fname" type="text" class="form-control" id="inputNombre" placeholder="Nombre">
+                <p class="validation" id="fname"></p>
+            </div>
+            <div class="col">
+                <label for="inputApellidos">Apellidos</label>
+                <input name="fsurnames" type="text" class="form-control" id="inputApellidos" placeholder="Apellidos">
+                <p class="validation" id="fsurnames"></p>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputEmail4">Correo electrónico</label>
+                <input name="femail" type="email" class="form-control" id="inputEmail4"
+                    placeholder="Correo electrónico">
+                <p class="validation" id="femail"></p>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputTelefono">Teléfono</label>
+                <input name="ftelephone" type="tel" class="form-control" id="inputTelefono" placeholder="Teléfono">
+                <p class="validation" id="ftelephone"></p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputAddress">Dirección</label>
+            <input name="faddress" type="text" class="form-control" id="inputAddress" placeholder="Almansa nº25">
+            <p class="validation" id="faddress"></p>
+        </div>
+        <div class="form-group">
+            <label for="inputAddress2">Dirección 2</label>
+            <input name="faddress2" type="text" class="form-control" id="inputAddress2"
+                placeholder="Apartamento, estudio o piso">
+            <p class="validation" id="faddress2"></p>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="inputState">Sexo</label>
+                <select id="inputState" class="form-control">
+                    <option selected>Elegir sexo...</option>
+                    <option>Masculino</option>
+                    <option>Femenino</option>
+                </select>
+                <p class="validation" id="fgender"></p>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputCity">Ciudad</label>
+                <input name="fcity" type="text" class="form-control" id="inputCity"
+                    placeholder="Las Palmas de Gran Canaria">
+                <p class="validation" id="fcity"></p>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="inputZip">Código postal</label>
+                <input name="fpostalcode" type="text" class="form-control" id="inputZip" placeholder="Código postal">
+                <p class="validation" id="fpostalcode"></p>
+            </div>
+        </div>
+        <div>
+            <label for="carneSi">¿Tiene carné de conducir?</label><br>
+            <input type="radio" name="exampleRadios" id="carneSi" value="option1">Si<br>
+            <input type="radio" name="exampleRadios" id="carneNo" value="option2">No<br>
+            <p class="validation" id="flicense"></p>
+        </div>
+        <div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="reset" class="btn btn-primary">Limpiar</button>
+        </div>
+    </form>
+    <footer class="page-footer font-small pt-4">
+        <div class="container-fluid text-center text-md-left">
+            <div class="row">
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <h5 class="text-uppercase">Delicias España</h5>
+                    <p>20 años dando el mejor servicio de comida rápida de Canarias.</p>
+                </div>
+                <hr class="clearfix w-100 d-md-none pb-3">
+                <div class="col-md-3 mb-md-0 mb-3">
+                    <h5 class="text-uppercase">Links</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a class="footer-links" href="#!">Aviso legal</a>
+                        </li>
+                        <li>
+                            <a class="footer-links" href="#!">Política de privacidad</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-md-0 mb-3">
+                    <h5 class="text-uppercase">REDES SOCIALES</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!"><img class="img-fluid img-footer" src="img/twitter2.png" alt="twitter"></a>
+                            <a href="#!"><img class="img-fluid img-footer" src="img/instagram2.png" alt="instagram"></a>
+                            <a href="#!"><img class="img-fluid img-footer" src="img/facebook2.png" alt="facebook"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+            <a class="footer-links" href="index.html">Delicias España</a>
+        </div>
+    </footer>
+</body>
+
+</html>
